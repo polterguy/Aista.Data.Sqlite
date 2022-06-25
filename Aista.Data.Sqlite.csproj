@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Aista.Data.Sqlite</AssemblyName>
+    <RootNamespace>$(AssemblyName)</RootNamespace>
+    <PackageId>Aista.Data.Sqlite</PackageId>
+    <Description>Aista.Data.Sqlite is a lightweight ADO.NET provider for SQLite and a port of the original Microsoft.Data.Sqlite project(s).</Description>
+    <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
+    <MinClientVersion>3.6</MinClientVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>SQLite;Data;ADO.NET</PackageTags>
+    <PackageProjectUrl>https://docs.microsoft.com/dotnet/standard/data/sqlite/</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Resources.Designer.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="SqliteConnection.CreateAggregate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SqliteConnection.CreateAggregate.cs</LastGenOutput>
+    </None>
+    <None Update="SqliteConnection.CreateFunction.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SqliteConnection.CreateFunction.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SQLitePCLRaw.core" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.Designer.tt</DependentUpon>
+    </Compile>
+    <Compile Update="SqliteCommand.cs" />
+    <Compile Update="SqliteConnection.CreateAggregate.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SqliteConnection.CreateAggregate.tt</DependentUpon>
+    </Compile>
+    <Compile Update="SqliteConnection.CreateFunction.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SqliteConnection.CreateFunction.tt</DependentUpon>
+    </Compile>
+    <Compile Update="SqliteConnection.cs" />
+  </ItemGroup>
+
+</Project>

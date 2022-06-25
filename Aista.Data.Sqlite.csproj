@@ -3,13 +3,18 @@
   <PropertyGroup>
     <AssemblyName>Aista.Data.Sqlite</AssemblyName>
     <RootNamespace>$(AssemblyName)</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Aista.Data.Sqlite</PackageId>
+    <PackOnBuild>true</PackOnBuild>
     <Description>Aista.Data.Sqlite is a lightweight ADO.NET provider for SQLite and a port of the original Microsoft.Data.Sqlite project(s).</Description>
     <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
     <MinClientVersion>3.6</MinClientVersion>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>SQLite;Data;ADO.NET</PackageTags>
-    <PackageProjectUrl>https://docs.microsoft.com/dotnet/standard/data/sqlite/</PackageProjectUrl>
+    <PackageVersion>14.0.0</PackageVersion>
+    <PackageProjectUrl>https://github.com/polterguy/Aista.Data.Sqlite</PackageProjectUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <PropertyGroup>

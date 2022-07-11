@@ -11,7 +11,7 @@
     <MinClientVersion>3.6</MinClientVersion>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>SQLite;Data;ADO.NET</PackageTags>
-    <PackageVersion>14.0.4</PackageVersion>
+    <PackageVersion>14.0.5</PackageVersion>
     <PackageProjectUrl>https://github.com/polterguy/Aista.Data.Sqlite</PackageProjectUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
